@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    bottom: unset;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: contents;
+    justify-content: center;
+}
+
+.artigo {
+    display: flex;
+    margin: 32px auto 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pacote {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 60%;
+    height: 95vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 45rem;
+}
+
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    min-height: 38rem;
+    background-color: #ffffff;
+}
+
+  
+
+.minigram-logo {
+    width: 250px;
+}
+
+.margem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.foto img {
+    height: 5rem;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.login {
+    margin: 30px;
+}
+.button{
+    background-color: #8cafdd;
+    border-radius: 8px;
+    padding: 5px 27px;
+    border: 1px;
+    color:#ffffff;
+    -webkit-text-stroke: thin;
+    cursor: pointer;
+}
+
+.logout {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: slategrey;
+}
+
+.link {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem; 
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+    cursor: pointer;
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+    cursor: pointer;
+}
+
+.rodape {
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: slategray;
+    max-width: 60%;
+}
+
+.item {
+    color: darkgray;
+    margin: 10px;
+}
+
+@media (max-width:1024px) {
+    .pacote {
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .pacote {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+    
+    .margem {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
